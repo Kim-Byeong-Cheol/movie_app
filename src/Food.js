@@ -1,6 +1,10 @@
 import React from 'react'
-function Food({fav}) {
-    return (<h1>I love {fav}.</h1>);
+function Food({name, image}) {
+    return (
+        <div>
+            <h2>I love {name}</h2>
+            <img src={image} alt={name}/>
+        </div>);
 }
 
 export default Food;
