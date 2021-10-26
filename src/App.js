@@ -6,7 +6,7 @@ class App extends React.Component {
   };
 
   render() {
-    return <h1>I'm a class component</h1>
+    return <h1>The number is {this.state.count}</h1>
   }  
 }
 
