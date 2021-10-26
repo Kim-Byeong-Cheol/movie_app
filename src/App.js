@@ -6,7 +6,13 @@ class App extends React.Component {
   };
 
   render() {
-    return <h1>The number is {this.state.count}</h1>
+    return (
+      <div>
+        <h1>The number is {this.state.count}</h1>
+        <button>Add</button>
+        <button>Minus</button>
+      </div>
+    )
   }  
 }
 
