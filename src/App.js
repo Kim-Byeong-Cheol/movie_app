@@ -1,5 +1,13 @@
-import React from 'react'
-import Food from './Food'
+import React from 'react';
+import PropTypes from 'prop-types';
+function Food({name, image, rating}) {
+  return (
+      <div>
+          <h2>I love {name}</h2>
+          <h4>{rating}/5.0</h4>
+          <img src={image} alt={name}/>
+      </div>);
+}
 
 const foodILike = [
   {
@@ -31,8 +39,14 @@ const foodILike = [
 function App() {
   return (
   <div>
-    {foodILike.map(dish=>(<Food key={dish.key} name={dish.name} image={dish.image} />))}
+    {foodILike.map(dish=>(<Food key={dish.id} name={dish.name} image={dish.image} rating={dish.rating}/>))}
   </div>);
+}
+
+Food.propTypes = {
+  name: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  rating: PropTypes.string.isRequired,
 }
 
 export default App;
