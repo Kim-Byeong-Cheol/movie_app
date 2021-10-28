@@ -2,10 +2,11 @@ import React from 'react';
 
 class App extends React.Component {
   state = {
-    isLoading: false,
+    isLoading: true,
   }
   render() {
-    return <div />;
+    const { isLoading } = this.state;
+    return <div>{isLoading ? 'Loading...': 'We ar ready'}</div>;
   }
 }
 
