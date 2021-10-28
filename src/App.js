@@ -40,6 +40,10 @@ class App extends React.Component {
   componentDidUpdate() {
     console.log("I'm componentDidUpdate.");
   }
+
+  componentWillUnmount() {
+    console.log("Goodbye, cruel world.");
+  }
 }
 
 export default App;
