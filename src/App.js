@@ -36,6 +36,10 @@ class App extends React.Component {
   componentDidMount() {
     console.log("I'm componentDidMount.");
   }
+
+  componentDidUpdate() {
+    console.log("I'm componentDidUpdate.");
+  }
 }
 
 export default App;
