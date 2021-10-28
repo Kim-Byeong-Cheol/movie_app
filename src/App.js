@@ -3,7 +3,7 @@ import React from 'react';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log('hello');
+    console.log('hello.');
   }
 
   state = {
@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log("I'm render");
+    console.log("I'm render.");
     return (
       <div>
         <h1>The number is {this.state.count}</h1>
@@ -31,7 +31,11 @@ class App extends React.Component {
         <button onClick={this.minus}>Minus</button>
       </div>
     )
-  }  
+  }
+  
+  componentDidMount() {
+    console.log("I'm componentDidMount.");
+  }
 }
 
 export default App;
