@@ -11,8 +11,8 @@ class App extends React.Component {
     return <div>{isLoading ? 'Loading...': 'We ar ready'}</div>;
   }
 
-  getMovies = () => {
-    const movies = axios.get('https://yts-proxy.now.sh/list_movies.json');
+  getMovies = async () => {
+    const movies = await axios.get('https://yts-proxy.now.sh/list_movies.json');
   }
 
   componentDidMount() {
