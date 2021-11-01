@@ -6,4 +6,4 @@ function App() {
   return <Home />;
 }
 
-expect default App;
+export default App;
